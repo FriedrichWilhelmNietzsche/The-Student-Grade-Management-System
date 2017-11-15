@@ -64,7 +64,7 @@ namespace winform_login
             this.studentPanel.MouseLeave -= this.studentPanel_MouseLeave;
 
             this.teacherPanel.Location = new Point(0, 626);
-            this.studentPanel.Height = 556;
+            this.studentPanel.Height = 558;
 
             this.student_Username.Focus();
             Password_Focus(this.student_password,"    Password",false);
@@ -85,7 +85,7 @@ namespace winform_login
             this.teacherPanel.MouseLeave -= this.teacherPanel_MouseLeave;
 
             this.teacherPanel.Location = new Point(0, 128);        //0, 376     
-            this.teacherPanel.Height = 556;  // the Height of Size was 558 before change
+            this.teacherPanel.Height = 558;  // the Height of Size was 558 before change
 
             this.teacher_Username.Focus();
             Password_Focus(this.teacher_Password, "    Password", false);
@@ -172,15 +172,34 @@ namespace winform_login
 
         #endregion
 
+
+        #region 登录按钮
         private void student_loginButton_Click(object sender, EventArgs e)
         {
             string username = this.student_Username.Text;
             string password = this.student_password.Text;
 
+            if (textBox_Check(username, password))
+                MessageBox.Show("请输出正确的账号密码!");
+            else
+                
+            
+        }
+
+        private void teacher_loginButton_Click(object sender, EventArgs e)
+        {
 
         }
 
-
+        private bool textBox_Check(string username,string password)
+        {
+            if(username.Equals("    Username") || username.Equals(""))
+                return false;
+            if (password.Equals("    Password") || password.Equals(""))
+                return false;
+            return true;
+        }
+        #endregion
     }
 
 }

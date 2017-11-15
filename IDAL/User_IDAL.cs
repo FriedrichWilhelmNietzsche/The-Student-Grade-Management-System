@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BLL
+namespace IDAL
 {
-    class loginManager
-    {   
-        public void userCheck(string username,string password)
-        {
+    public interface User_IDAL
+    {
+        Model.user SelectUser(string username, string password);
 
-        }
     }
 }

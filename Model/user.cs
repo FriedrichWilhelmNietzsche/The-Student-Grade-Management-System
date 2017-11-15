@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class user
+    public class user
     {
         private int _user_id;
         /// <summary>

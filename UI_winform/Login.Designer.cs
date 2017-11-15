@@ -95,6 +95,7 @@
             this.teacher_loginButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
             this.teacher_loginButton.Name = "teacher_loginButton";
             this.teacher_loginButton.UseVisualStyleBackColor = false;
+            this.teacher_loginButton.Click += new System.EventHandler(this.teacher_loginButton_Click);
             // 
             // teacherClose
             // 

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IDAL
+namespace DAL
 {
-    interface IDAL
+    class User_DAL
     {
-
     }
 }

@@ -807,7 +807,7 @@
     <value>6</value>
   </data>
   <data name="teacherPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 600</value>
+    <value>0, 376</value>
   </data>
   <data name="teacherPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>411, 558</value>
