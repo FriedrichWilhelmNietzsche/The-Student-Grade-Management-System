@@ -8,9 +8,9 @@ namespace DAL
 {
     class DbUtil
     {
-        static string host = "localhost";
-        static string Database = "student";
-        static string username = "root";
-        static string password = "root";
+        public static string host = "localhost";
+        public static string Database = "student";
+        public static string username = "root";
+        public static string password = "root";
     }
 }
