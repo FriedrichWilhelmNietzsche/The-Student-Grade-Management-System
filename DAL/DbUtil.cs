@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL
+namespace Mysql_DAL
 {
     class DbUtil
     {
         public static string host = "localhost";
-        public static string Database = "student";
+        public static string Database = "students";
         public static string username = "root";
         public static string password = "root";
     }

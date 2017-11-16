@@ -7,28 +7,70 @@ using IDAL;
 using Model;
 using MySql.Data.MySqlClient;
 using System.Data.SqlClient;
+using System.Data;
 
-namespace DAL
+namespace Mysql_DAL
 {
     public class User_DAL : User_IDAL
     {
-        User_DAL()
+        public User_DAL()
         {
             myConn = new MySqlConnection("Host=" + DbUtil.host + ";Database=" + DbUtil.Database + ";Username=" + DbUtil.username + ";Password=" + DbUtil.password + ";");
         }
 
-
-        public user SelectUser(string username, string password,string type)
+        /// <summary>
+        /// 通过用户名，密码和用户类型，返回用户实例
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <param name="type"></param>
+        /// <returns>
+        ///     <value="null">不存在该用户</value>
+        /// </returns>
+        public User SelectUser(string username, string password,string type)
         {
-            const string selectSql = "SELECT * FROM users_list WHERE user_name = @Username AND user_pass = @Password AND role_type = @type";
+            const string selectSql = "SELECT * FROM users_list WHERE user_name = @username AND user_pass = @password AND role_type = @type";
+            User user = null;
 
             MySqlCommand myCom = myConn.CreateCommand();
             myCom.CommandText = selectSql;
-            myCom.Parameters.Add("")
+            myCom.CommandType = System.Data.CommandType.Text;
 
-            myConn.Open();
+            MySqlParameter[] paras = new[]
+            {
+                new MySqlParameter("@username",MySqlDbType.VarChar,10){Value = username},
+                new MySqlParameter("@password",MySqlDbType.VarChar,15){Value = password},
+                new MySqlParameter("@type",MySqlDbType.Int32,11){Value = SelectType(type)}
+            };
+            myCom.Parameters.AddRange(paras);
 
-            myConn.Close();
+            try
+            {
+                myConn.Open();
+
+                using (MySqlDataReader reader = myCom.ExecuteReader(CommandBehavior.CloseConnection))
+                {
+                    while (reader.Read())
+                    {
+                        if (user == null)
+                        {
+                            user = new User();
+
+                            user.user_id = reader.GetInt32("user_id");
+                            user.user_name = username;
+                            user.user_pass = password;
+                            user.role_type = type;
+                            user.is_lock = reader.GetInt32("is_lock");
+                            user.add_Time = reader.GetDateTime("add_time");
+                        }
+
+                    }
+                }
+            }
+            catch(MySqlException exo)
+            {
+                Console.Write(exo.ToString());
+            }
 
             return user;
         }
@@ -49,16 +91,22 @@ namespace DAL
             MySqlCommand myCom = myConn.CreateCommand();
             myCom.CommandText = selectRole;
             myCom.CommandType = System.Data.CommandType.Text;
-            myCom.Parameters.Add(new SqlParameter("@roleName", type));
+            myCom.Parameters.Add(new MySqlParameter("@roleName", type));
 
-            myConn.Open();
-
-            using (MySqlDataReader reader = myCom.ExecuteReader(System.Data.CommandBehavior.CloseConnection))
+            try
             {
-                while (reader.Read())
+                myConn.Open();
+
+                using (MySqlDataReader reader = myCom.ExecuteReader(CommandBehavior.CloseConnection))
                 {
-                    flag = reader.GetInt32(0);
+                    while (reader.Read())
+                    {
+                        flag = reader.GetInt32(0);
+                    }
                 }
+            }catch(MySqlException exc)
+            {
+                Console.Write(exc.ToString());
             }
 
             return flag;

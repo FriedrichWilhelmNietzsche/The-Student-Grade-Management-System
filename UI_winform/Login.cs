@@ -12,9 +12,13 @@ namespace winform_login
 { 
     public partial class Login : Form
     {
+        BLL.LoginManager loginManager = null;
+
         public Login()
         {
             InitializeComponent();
+
+            loginManager = new BLL.LoginManager();
         }
 
         /// <summary>
@@ -22,9 +26,9 @@ namespace winform_login
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void loginCloseButton_Click(object sender, EventArgs e)
+        private void LoginCloseButton_Click(object sender, EventArgs e)
         {
-            System.Environment.Exit(0); //  form exit
+            loginManager.Exit(); //  form exit
         }
 
         #region 鼠标悬停事件，样式相应
@@ -173,15 +177,24 @@ namespace winform_login
         #endregion
 
 
-        #region 登录按钮
+        #region 登录事件
         private void student_loginButton_Click(object sender, EventArgs e)
         {
-            string username = this.student_Username.Text;
-            string password = this.student_password.Text;
+            string username = this.student_Username.Text.Trim();
+            string password = this.student_password.Text.Trim();
 
-            if (textBox_Check(username, password))
+            if (!textBox_Check(username, password))
                 MessageBox.Show("请输出正确的账号密码!");
             else
+            {
+                try
+                {
+                    loginManager.UserLogin(username, password, "student");
+                }catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
                 
             
         }
@@ -191,11 +204,11 @@ namespace winform_login
 
         }
 
-        private bool textBox_Check(string username,string password)
+        private bool textBox_Check(string username, string password)
         {
-            if(username.Equals("    Username") || username.Equals(""))
+            if (username.Equals("Username") || username.Equals(""))
                 return false;
-            if (password.Equals("    Password") || password.Equals(""))
+            if (password.Equals("Password") || password.Equals(""))
                 return false;
             return true;
         }

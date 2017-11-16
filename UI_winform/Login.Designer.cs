@@ -152,7 +152,7 @@
             this.loginCloseButton.Name = "loginCloseButton";
             this.loginCloseButton.TabStop = false;
             this.loginCloseButton.Zoom = 20;
-            this.loginCloseButton.Click += new System.EventHandler(this.loginCloseButton_Click);
+            this.loginCloseButton.Click += new System.EventHandler(this.LoginCloseButton_Click);
             // 
             // loginDragControl1
             // 

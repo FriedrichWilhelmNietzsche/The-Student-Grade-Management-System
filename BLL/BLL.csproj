@@ -43,5 +43,19 @@
     <Compile Include="loginManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\Mysql_DAL.csproj">
+      <Project>{03169eb1-4be7-4404-aae3-5de2e0e0de3a}</Project>
+      <Name>Mysql_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{47224620-bd3c-4862-a1ee-e4679a23a006}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{36fa3829-9343-463e-83b6-0c290de8684b}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
