@@ -18,8 +18,8 @@ namespace BLL
             user = user_IDAL.SelectUser(username, password, type);
             if (user == null)
                 throw new Exception("Wrong Username or Password");
-            else
-                Console.Write("successed");
+            else { }
+                
         }
 
         Model.User user = null;

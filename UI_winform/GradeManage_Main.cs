@@ -6,14 +6,14 @@ using System.Windows.Forms;
 
 namespace winform_login
 {
-    static class GradeManage_Main
+    class GradeManage_Main
     {
         [STAThread]
          static void Main()
          {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new MainWin());
          }
     }
 }
