@@ -56,21 +56,27 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="GradeManage_Main.cs" />
-    <Compile Include="MainWin.cs">
+    <Compile Include="StudentWin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainWin.Designer.cs">
-      <DependentUpon>MainWin.cs</DependentUpon>
+    <Compile Include="StudentWin.Designer.cs">
+      <DependentUpon>StudentWin.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.byn.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainWin.resx">
-      <DependentUpon>MainWin.cs</DependentUpon>
+    <EmbeddedResource Include="StudentWin.resx">
+      <DependentUpon>StudentWin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,6 +87,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -98,6 +107,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{abf08ce4-ce2e-4afd-a0dd-d21dc1344d45}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{36fa3829-9343-463e-83b6-0c290de8684b}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

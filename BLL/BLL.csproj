@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="loginManager.cs" />
+    <Compile Include="LoginManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentManager.cs" />
+    <Compile Include="TeacherManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\Mysql_DAL.csproj">

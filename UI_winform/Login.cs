@@ -18,7 +18,7 @@ namespace winform_login
         {
             InitializeComponent();
 
-            loginManager = new BLL.LoginManager();
+            loginManager =new BLL.LoginManager();
         }
 
         /// <summary>
@@ -178,40 +178,50 @@ namespace winform_login
 
 
         #region 登录事件
-        private void student_loginButton_Click(object sender, EventArgs e)
-        {
-            string username = this.student_Username.Text.Trim();
-            string password = this.student_password.Text.Trim();
 
-            if (!textBox_Check(username, password))
+        private void LoginButton(string username,string password,string type)
+        {
+
+            if (password.Equals("Password") 
+                    || password.Equals("")
+                    || username.Equals("Username") 
+                    || username.Equals("")
+                    )
                 MessageBox.Show("请输出正确的账号密码!");
             else
             {
                 try
                 {
-                    loginManager.UserLogin(username, password, "student");
-                }catch(Exception ex)
+                    Model.User user = loginManager.UserLogin(username, password, "student");
+
+                    switch (type)
+                    {
+                        case "student":
+                            StudentWin studentWin = new StudentWin(user);
+                            studentWin.Show();
+                            this.Hide();
+                            break;
+
+                        case "teacher":
+                            break;
+                    }
+                }
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
             }
-                
-            
+        }
+        private void student_loginButton_Click(object sender, EventArgs e)
+        {
+            LoginButton(this.student_Username.Text.Trim(), this.student_password.Text.Trim(), "student");
         }
 
         private void teacher_loginButton_Click(object sender, EventArgs e)
         {
-
+            LoginButton(this.teacher_Username.Text.Trim(), this.teacher_Password.Text.Trim(), "teacher");
         }
 
-        private bool textBox_Check(string username, string password)
-        {
-            if (username.Equals("Username") || username.Equals(""))
-                return false;
-            if (password.Equals("Password") || password.Equals(""))
-                return false;
-            return true;
-        }
         #endregion
     }
 

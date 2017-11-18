@@ -8,22 +8,23 @@ namespace BLL
 {
     public class LoginManager
     {
+        private Model.User user = null;
+        private IDAL.User_IDAL user_IDAL = null;
         public LoginManager()
         {
             user_IDAL = new Mysql_DAL.User_DAL();
         }
 
-        public void UserLogin(string username,string password,string type)
+        public Model.User UserLogin(string username,string password,string type)
         {
             user = user_IDAL.SelectUser(username, password, type);
             if (user == null)
                 throw new Exception("Wrong Username or Password");
-            else { }
+            else {
+                return user;
+            }
                 
         }
-
-        Model.User user = null;
-        IDAL.User_IDAL user_IDAL = null;
 
         public void Exit()
         {
