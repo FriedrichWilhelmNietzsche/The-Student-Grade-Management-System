@@ -8,12 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WIN_成绩管理系统
+namespace Student_Main
 {
     public partial class TeacherWin : Form
     {
-        public TeacherWin()
+        BLL.TeacherManager teacherManager;
+
+        public TeacherWin(Model.User user)
         {
+            teacherManager = new BLL.TeacherManager(user);
+
             InitializeComponent();
         }
     }

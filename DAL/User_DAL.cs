@@ -75,6 +75,54 @@ namespace Mysql_DAL
             return user;
         }
 
+        public Model.UserInfo SelectUserInfo(int id)
+        {
+            const string selectSql = "SELECT * FROM users_info WHERE user_id = @id;";
+            UserInfo userInfo = null;
+
+            MySqlCommand myCom = myConn.CreateCommand();
+            myCom.CommandText = selectSql;
+            myCom.CommandType = System.Data.CommandType.Text;
+
+            myCom.Parameters.Add(new MySqlParameter("@id", id));
+
+            try
+            {
+                myConn.Open();
+
+                using (MySqlDataReader reader = myCom.ExecuteReader(CommandBehavior.CloseConnection))
+                {
+                    while (reader.Read())
+                    {
+                        if(userInfo == null)
+                        {
+                            userInfo = new UserInfo();
+                            userInfo.user_id = id;
+                            userInfo.real_name = reader.GetString("real_name");
+                            userInfo.number = reader.GetString("number");
+                            userInfo.sex = reader.GetString("sex");
+                            userInfo.telephone = reader.GetString("telephone");
+                            userInfo.email = reader.GetString("email");
+                            if (reader.IsDBNull(6))
+                            {
+                                userInfo.explain = "";
+                            }
+                            else
+                            {
+                                userInfo.explain = reader.GetString("explain");
+                            }
+                            return userInfo;
+                        }
+                    }
+                }
+            }catch(Exception exc)
+            {
+                Console.Write(exc.Message);
+            }
+
+            return null;
+        }
+
         /// <summary>
         /// 查询相应角色类型的id
         /// </summary>

@@ -8,15 +8,23 @@ namespace BLL
 {
     public class StudentManager
     {
-        Model.User user;
+        private Model.User user;
+        private IDAL.User_IDAL user_IDAL = null;
+
         public StudentManager(Model.User user)
         {
             this.user = user;
+            this.user_IDAL = new Mysql_DAL.User_DAL();
         }
 
-        public string GetUsername()
+        public Model.UserInfo SelectUserInfo()
         {
-            return user.user_name;
+            return user_IDAL.SelectUserInfo(user.user_id);
+        }
+
+        public Model.User GetUser()
+        {
+            return user;
         }
 
         public void Exit()

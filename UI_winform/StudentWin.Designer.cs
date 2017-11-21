@@ -1,4 +1,4 @@
-﻿namespace winform_login
+﻿namespace Student_Main
 {
     partial class StudentWin
     {
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentWin));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Menu = new System.Windows.Forms.Panel();
@@ -48,10 +49,13 @@
             this.dragPanel = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.userInfo1 = new Student_Main.UserInfo();
+            this.transition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loginCloseButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentLogin)).BeginInit();
             this.dragPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -70,6 +74,7 @@
             this.Menu.Controls.Add(this.Info);
             this.Menu.Controls.Add(this.label1);
             this.Menu.Controls.Add(this.Main_title);
+            this.transition1.SetDecoration(this.Menu, BunifuAnimatorNS.DecorationType.None);
             this.Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
@@ -79,6 +84,7 @@
             // UnderLine
             // 
             this.UnderLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(234)))));
+            this.transition1.SetDecoration(this.UnderLine, BunifuAnimatorNS.DecorationType.None);
             this.UnderLine.Location = new System.Drawing.Point(114, 385);
             this.UnderLine.Name = "UnderLine";
             this.UnderLine.Size = new System.Drawing.Size(81, 1);
@@ -88,6 +94,7 @@
             // MenuTitle1
             // 
             this.MenuTitle1.AutoSize = true;
+            this.transition1.SetDecoration(this.MenuTitle1, BunifuAnimatorNS.DecorationType.None);
             this.MenuTitle1.Font = new System.Drawing.Font("楷体", 15F);
             this.MenuTitle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
             this.MenuTitle1.Location = new System.Drawing.Point(31, 148);
@@ -99,6 +106,7 @@
             // MenuTitle3
             // 
             this.MenuTitle3.AutoSize = true;
+            this.transition1.SetDecoration(this.MenuTitle3, BunifuAnimatorNS.DecorationType.None);
             this.MenuTitle3.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MenuTitle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
             this.MenuTitle3.Location = new System.Drawing.Point(31, 309);
@@ -111,6 +119,7 @@
             // 
             this.course.AutoSize = true;
             this.course.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition1.SetDecoration(this.course, BunifuAnimatorNS.DecorationType.None);
             this.course.Font = new System.Drawing.Font("华文楷体", 13F);
             this.course.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
             this.course.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -119,6 +128,7 @@
             this.course.Size = new System.Drawing.Size(81, 20);
             this.course.TabIndex = 2;
             this.course.Text = "课程查询";
+            this.course.Click += new System.EventHandler(this.course_Click);
             this.course.MouseEnter += new System.EventHandler(this.bunifuCustomLabel_Enter);
             this.course.MouseLeave += new System.EventHandler(this.bunifuCustomLabel_Leave);
             // 
@@ -126,6 +136,7 @@
             // 
             this.Grade.AutoSize = true;
             this.Grade.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition1.SetDecoration(this.Grade, BunifuAnimatorNS.DecorationType.None);
             this.Grade.Font = new System.Drawing.Font("华文楷体", 13F);
             this.Grade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
             this.Grade.Location = new System.Drawing.Point(113, 244);
@@ -133,6 +144,7 @@
             this.Grade.Size = new System.Drawing.Size(81, 20);
             this.Grade.TabIndex = 2;
             this.Grade.Text = "成绩查询";
+            this.Grade.Click += new System.EventHandler(this.Grade_Click);
             this.Grade.MouseEnter += new System.EventHandler(this.bunifuCustomLabel_Enter);
             this.Grade.MouseLeave += new System.EventHandler(this.bunifuCustomLabel_Leave);
             // 
@@ -140,6 +152,7 @@
             // 
             this.Info.AutoSize = true;
             this.Info.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition1.SetDecoration(this.Info, BunifuAnimatorNS.DecorationType.None);
             this.Info.Font = new System.Drawing.Font("华文楷体", 13F);
             this.Info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
             this.Info.Location = new System.Drawing.Point(113, 359);
@@ -155,6 +168,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(136)))), ((int)(((byte)(148)))));
+            this.transition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Location = new System.Drawing.Point(12, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(236, 1);
@@ -163,6 +177,7 @@
             // Main_title
             // 
             this.Main_title.AutoSize = true;
+            this.transition1.SetDecoration(this.Main_title, BunifuAnimatorNS.DecorationType.None);
             this.Main_title.Font = new System.Drawing.Font("隶书", 20F);
             this.Main_title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(176)))), ((int)(((byte)(183)))));
             this.Main_title.Location = new System.Drawing.Point(12, 26);
@@ -175,6 +190,7 @@
             // 
             this.loginCloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(234)))));
             this.loginCloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.transition1.SetDecoration(this.loginCloseButton, BunifuAnimatorNS.DecorationType.None);
             this.loginCloseButton.Image = ((System.Drawing.Image)(resources.GetObject("loginCloseButton.Image")));
             this.loginCloseButton.ImageActive = null;
             this.loginCloseButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -190,16 +206,18 @@
             // username
             // 
             this.username.AutoSize = true;
+            this.transition1.SetDecoration(this.username, BunifuAnimatorNS.DecorationType.None);
             this.username.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(136)))), ((int)(((byte)(148)))));
             this.username.Location = new System.Drawing.Point(585, 35);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(63, 24);
+            this.username.Size = new System.Drawing.Size(46, 24);
             this.username.TabIndex = 9;
-            this.username.Text = "label2";
+            this.username.Text = "user";
             // 
             // studentLogin
             // 
+            this.transition1.SetDecoration(this.studentLogin, BunifuAnimatorNS.DecorationType.None);
             this.studentLogin.Image = ((System.Drawing.Image)(resources.GetObject("studentLogin.Image")));
             this.studentLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.studentLogin.Location = new System.Drawing.Point(530, 25);
@@ -212,6 +230,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(87)))), ((int)(((byte)(105)))));
+            this.transition1.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.label3.Location = new System.Drawing.Point(266, 71);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(725, 1);
@@ -220,6 +239,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(176)))), ((int)(((byte)(183)))));
+            this.transition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.Location = new System.Drawing.Point(676, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(1, 25);
@@ -232,6 +252,7 @@
             this.dragPanel.Controls.Add(this.label2);
             this.dragPanel.Controls.Add(this.loginCloseButton);
             this.dragPanel.Controls.Add(this.username);
+            this.transition1.SetDecoration(this.dragPanel, BunifuAnimatorNS.DecorationType.None);
             this.dragPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.dragPanel.Location = new System.Drawing.Point(258, 0);
             this.dragPanel.Name = "dragPanel";
@@ -247,10 +268,43 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.userInfo1);
+            this.transition1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(268, 84);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(720, 504);
             this.panel1.TabIndex = 15;
+            // 
+            // userInfo1
+            // 
+            this.transition1.SetDecoration(this.userInfo1, BunifuAnimatorNS.DecorationType.None);
+            this.userInfo1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userInfo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(75)))), ((int)(((byte)(96)))));
+            this.userInfo1.Location = new System.Drawing.Point(0, 0);
+            this.userInfo1.Name = "userInfo1";
+            this.userInfo1.Size = new System.Drawing.Size(720, 504);
+            this.userInfo1.TabIndex = 0;
+            // 
+            // transition1
+            // 
+            this.transition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.transition1.DefaultAnimation = animation1;
             // 
             // StudentWin
             // 
@@ -263,18 +317,19 @@
             this.Controls.Add(this.dragPanel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Menu);
+            this.transition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StudentWin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentWin";
-            this.Load += new System.EventHandler(this.MainWin_Load);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loginCloseButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentLogin)).EndInit();
             this.dragPanel.ResumeLayout(false);
             this.dragPanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -296,10 +351,10 @@
         private Bunifu.Framework.UI.BunifuCustomLabel Grade;
         private Bunifu.Framework.UI.BunifuCustomLabel course;
         private System.Windows.Forms.Label UnderLine;
-
-        private System.Collections.Generic.List<Bunifu.Framework.UI.BunifuCustomLabel> paras;
         private System.Windows.Forms.Panel dragPanel;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Panel panel1;
+        private BunifuAnimatorNS.BunifuTransition transition1;
+        private UserInfo userInfo1;
     }
 }

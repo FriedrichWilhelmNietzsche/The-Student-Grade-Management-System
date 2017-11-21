@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace winform_login
+namespace Student_Main
 { 
     public partial class Login : Form
     {
@@ -203,6 +203,9 @@ namespace winform_login
                             break;
 
                         case "teacher":
+                            TeacherWin teacherWin = new TeacherWin(user);
+                            teacherWin.Show();
+                            this.Hide();
                             break;
                     }
                 }

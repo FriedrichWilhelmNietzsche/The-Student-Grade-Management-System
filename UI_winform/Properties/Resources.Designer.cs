@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace winform_login.Properties
+namespace Student_Main.Properties
 {
 
 

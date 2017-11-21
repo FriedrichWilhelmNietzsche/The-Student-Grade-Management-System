@@ -1,4 +1,4 @@
-﻿namespace WIN_成绩管理系统
+﻿namespace Student_Main
 {
     partial class UserInfo
     {
@@ -40,12 +40,14 @@
             this.text_tel = new System.Windows.Forms.TextBox();
             this.text_email = new System.Windows.Forms.TextBox();
             this.text_explain = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // realName
             // 
             this.realName.AutoSize = true;
             this.realName.Font = new System.Drawing.Font("华文新魏", 13F);
+            this.realName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(75)))), ((int)(((byte)(96)))));
             this.realName.Location = new System.Drawing.Point(94, 69);
             this.realName.Name = "realName";
             this.realName.Size = new System.Drawing.Size(98, 18);
@@ -56,6 +58,7 @@
             // 
             this.number.AutoSize = true;
             this.number.Font = new System.Drawing.Font("华文新魏", 13F);
+            this.number.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(75)))), ((int)(((byte)(96)))));
             this.number.Location = new System.Drawing.Point(94, 112);
             this.number.Name = "number";
             this.number.Size = new System.Drawing.Size(62, 18);
@@ -66,7 +69,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("华文新魏", 13F);
-            this.label1.Location = new System.Drawing.Point(94, 165);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(75)))), ((int)(((byte)(96)))));
+            this.label1.Location = new System.Drawing.Point(94, 161);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 18);
             this.label1.TabIndex = 0;
@@ -76,6 +80,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("华文新魏", 13F);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(75)))), ((int)(((byte)(96)))));
             this.label2.Location = new System.Drawing.Point(94, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 18);
@@ -86,6 +91,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("华文新魏", 13F);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(75)))), ((int)(((byte)(96)))));
             this.label3.Location = new System.Drawing.Point(94, 258);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 18);
@@ -96,6 +102,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("华文新魏", 13F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(75)))), ((int)(((byte)(96)))));
             this.label4.Location = new System.Drawing.Point(94, 305);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 18);
@@ -104,6 +111,7 @@
             // 
             // text_Username
             // 
+            this.text_Username.ForeColor = System.Drawing.SystemColors.WindowText;
             this.text_Username.Location = new System.Drawing.Point(214, 66);
             this.text_Username.Name = "text_Username";
             this.text_Username.Size = new System.Drawing.Size(118, 21);
@@ -111,6 +119,7 @@
             // 
             // text_number
             // 
+            this.text_number.ForeColor = System.Drawing.SystemColors.WindowText;
             this.text_number.Location = new System.Drawing.Point(214, 112);
             this.text_number.Name = "text_number";
             this.text_number.Size = new System.Drawing.Size(118, 21);
@@ -118,13 +127,15 @@
             // 
             // text_Sex
             // 
-            this.text_Sex.Location = new System.Drawing.Point(214, 162);
+            this.text_Sex.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.text_Sex.Location = new System.Drawing.Point(214, 158);
             this.text_Sex.Name = "text_Sex";
             this.text_Sex.Size = new System.Drawing.Size(85, 21);
             this.text_Sex.TabIndex = 3;
             // 
             // text_tel
             // 
+            this.text_tel.ForeColor = System.Drawing.SystemColors.WindowText;
             this.text_tel.Location = new System.Drawing.Point(214, 206);
             this.text_tel.Name = "text_tel";
             this.text_tel.Size = new System.Drawing.Size(118, 21);
@@ -132,6 +143,7 @@
             // 
             // text_email
             // 
+            this.text_email.ForeColor = System.Drawing.SystemColors.WindowText;
             this.text_email.Location = new System.Drawing.Point(214, 258);
             this.text_email.Name = "text_email";
             this.text_email.Size = new System.Drawing.Size(160, 21);
@@ -139,16 +151,28 @@
             // 
             // text_explain
             // 
+            this.text_explain.ForeColor = System.Drawing.SystemColors.WindowText;
             this.text_explain.Location = new System.Drawing.Point(214, 302);
             this.text_explain.Multiline = true;
             this.text_explain.Name = "text_explain";
             this.text_explain.Size = new System.Drawing.Size(404, 148);
             this.text_explain.TabIndex = 3;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("华文新魏", 20F);
+            this.label5.Location = new System.Drawing.Point(279, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(141, 27);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "个 人 信 息";
+            // 
             // UserInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.text_explain);
             this.Controls.Add(this.text_email);
             this.Controls.Add(this.text_tel);
@@ -161,6 +185,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.number);
             this.Controls.Add(this.realName);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(75)))), ((int)(((byte)(96)))));
             this.Name = "UserInfo";
             this.Size = new System.Drawing.Size(720, 504);
             this.ResumeLayout(false);
@@ -182,5 +207,6 @@
         private System.Windows.Forms.TextBox text_tel;
         private System.Windows.Forms.TextBox text_email;
         private System.Windows.Forms.TextBox text_explain;
+        private System.Windows.Forms.Label label5;
     }
 }

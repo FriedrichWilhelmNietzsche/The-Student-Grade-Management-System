@@ -1,4 +1,4 @@
-﻿namespace WIN_成绩管理系统
+﻿namespace Student_Main
 {
     partial class TeacherWin
     {
@@ -46,6 +46,16 @@
             this.loginCloseButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.username = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Menu.SuspendLayout();
             this.dragPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentLogin)).BeginInit();
@@ -61,9 +71,19 @@
             // 
             this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(87)))), ((int)(((byte)(105)))));
             this.Menu.Controls.Add(this.UnderLine);
+            this.Menu.Controls.Add(this.label6);
+            this.Menu.Controls.Add(this.label5);
+            this.Menu.Controls.Add(this.bunifuCustomLabel6);
+            this.Menu.Controls.Add(this.label4);
+            this.Menu.Controls.Add(this.bunifuCustomLabel4);
             this.Menu.Controls.Add(this.MenuTitle1);
+            this.Menu.Controls.Add(this.bunifuCustomLabel5);
+            this.Menu.Controls.Add(this.bunifuCustomLabel2);
+            this.Menu.Controls.Add(this.bunifuCustomLabel3);
             this.Menu.Controls.Add(this.MenuTitle3);
+            this.Menu.Controls.Add(this.bunifuCustomLabel1);
             this.Menu.Controls.Add(this.course);
+            this.Menu.Controls.Add(this.bunifuCustomLabel7);
             this.Menu.Controls.Add(this.Grade);
             this.Menu.Controls.Add(this.Info);
             this.Menu.Controls.Add(this.label1);
@@ -77,7 +97,7 @@
             // UnderLine
             // 
             this.UnderLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(234)))));
-            this.UnderLine.Location = new System.Drawing.Point(114, 385);
+            this.UnderLine.Location = new System.Drawing.Point(113, 552);
             this.UnderLine.Name = "UnderLine";
             this.UnderLine.Size = new System.Drawing.Size(81, 1);
             this.UnderLine.TabIndex = 6;
@@ -88,7 +108,7 @@
             this.MenuTitle1.AutoSize = true;
             this.MenuTitle1.Font = new System.Drawing.Font("楷体", 15F);
             this.MenuTitle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
-            this.MenuTitle1.Location = new System.Drawing.Point(31, 148);
+            this.MenuTitle1.Location = new System.Drawing.Point(31, 102);
             this.MenuTitle1.Name = "MenuTitle1";
             this.MenuTitle1.Size = new System.Drawing.Size(109, 20);
             this.MenuTitle1.TabIndex = 5;
@@ -99,7 +119,7 @@
             this.MenuTitle3.AutoSize = true;
             this.MenuTitle3.Font = new System.Drawing.Font("楷体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MenuTitle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
-            this.MenuTitle3.Location = new System.Drawing.Point(31, 309);
+            this.MenuTitle3.Location = new System.Drawing.Point(31, 496);
             this.MenuTitle3.Name = "MenuTitle3";
             this.MenuTitle3.Size = new System.Drawing.Size(109, 20);
             this.MenuTitle3.TabIndex = 3;
@@ -112,7 +132,7 @@
             this.course.Font = new System.Drawing.Font("华文楷体", 13F);
             this.course.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
             this.course.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.course.Location = new System.Drawing.Point(113, 200);
+            this.course.Location = new System.Drawing.Point(112, 131);
             this.course.Name = "course";
             this.course.Size = new System.Drawing.Size(81, 20);
             this.course.TabIndex = 2;
@@ -124,11 +144,11 @@
             this.Grade.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Grade.Font = new System.Drawing.Font("华文楷体", 13F);
             this.Grade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
-            this.Grade.Location = new System.Drawing.Point(113, 244);
+            this.Grade.Location = new System.Drawing.Point(112, 160);
             this.Grade.Name = "Grade";
             this.Grade.Size = new System.Drawing.Size(81, 20);
             this.Grade.TabIndex = 2;
-            this.Grade.Text = "成绩查询";
+            this.Grade.Text = "学生查询";
             // 
             // Info
             // 
@@ -136,7 +156,7 @@
             this.Info.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Info.Font = new System.Drawing.Font("华文楷体", 13F);
             this.Info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
-            this.Info.Location = new System.Drawing.Point(113, 359);
+            this.Info.Location = new System.Drawing.Point(112, 526);
             this.Info.Name = "Info";
             this.Info.Size = new System.Drawing.Size(81, 20);
             this.Info.TabIndex = 2;
@@ -227,6 +247,126 @@
             this.label3.Size = new System.Drawing.Size(725, 1);
             this.label3.TabIndex = 16;
             // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("华文楷体", 13F);
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(112, 270);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(81, 20);
+            this.bunifuCustomLabel1.TabIndex = 2;
+            this.bunifuCustomLabel1.Text = "成绩查询";
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("华文楷体", 13F);
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
+            this.bunifuCustomLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(112, 241);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(81, 20);
+            this.bunifuCustomLabel2.TabIndex = 2;
+            this.bunifuCustomLabel2.Text = "课程查询";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("楷体", 15F);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
+            this.label4.Location = new System.Drawing.Point(31, 212);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 20);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "课程管理：";
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("华文楷体", 13F);
+            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(112, 361);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(81, 20);
+            this.bunifuCustomLabel3.TabIndex = 2;
+            this.bunifuCustomLabel3.Text = "成绩查询";
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("华文楷体", 13F);
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
+            this.bunifuCustomLabel4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(112, 332);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(81, 20);
+            this.bunifuCustomLabel4.TabIndex = 2;
+            this.bunifuCustomLabel4.Text = "课程查询";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("楷体", 15F);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
+            this.label5.Location = new System.Drawing.Point(31, 303);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 20);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "课程管理：";
+            // 
+            // bunifuCustomLabel5
+            // 
+            this.bunifuCustomLabel5.AutoSize = true;
+            this.bunifuCustomLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("华文楷体", 13F);
+            this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(112, 456);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(81, 20);
+            this.bunifuCustomLabel5.TabIndex = 2;
+            this.bunifuCustomLabel5.Text = "成绩查询";
+            // 
+            // bunifuCustomLabel6
+            // 
+            this.bunifuCustomLabel6.AutoSize = true;
+            this.bunifuCustomLabel6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel6.Font = new System.Drawing.Font("华文楷体", 13F);
+            this.bunifuCustomLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
+            this.bunifuCustomLabel6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(112, 427);
+            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(81, 20);
+            this.bunifuCustomLabel6.TabIndex = 2;
+            this.bunifuCustomLabel6.Text = "课程查询";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("楷体", 15F);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(206)))), ((int)(((byte)(209)))));
+            this.label6.Location = new System.Drawing.Point(31, 398);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(109, 20);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "课程管理：";
+            // 
+            // bunifuCustomLabel7
+            // 
+            this.bunifuCustomLabel7.AutoSize = true;
+            this.bunifuCustomLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuCustomLabel7.Font = new System.Drawing.Font("华文楷体", 13F);
+            this.bunifuCustomLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(175)))), ((int)(((byte)(183)))));
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(111, 189);
+            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(81, 20);
+            this.bunifuCustomLabel7.TabIndex = 2;
+            this.bunifuCustomLabel7.Text = "学生查询";
+            // 
             // TeacherWin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -267,5 +407,15 @@
         private Bunifu.Framework.UI.BunifuImageButton loginCloseButton;
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
+        private System.Windows.Forms.Label label4;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace winform_login
+﻿namespace Student_Main
 {
     partial class Login
     {
