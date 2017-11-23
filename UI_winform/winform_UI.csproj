@@ -56,6 +56,12 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="GradeManage_Main.cs" />
+    <Compile Include="MainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControl.Designer.cs">
+      <DependentUpon>MainControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentWin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,22 +69,28 @@
       <DependentUpon>StudentWin.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentWin_Control\UserGrade.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentWin_Control\UserGrade.Designer.cs">
+      <DependentUpon>UserGrade.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherWin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TeacherWin.Designer.cs">
       <DependentUpon>TeacherWin.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserCourse.cs">
+    <Compile Include="StudentWin_Control\UserCourse.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserCourse.Designer.cs">
+    <Compile Include="StudentWin_Control\UserCourse.Designer.cs">
       <DependentUpon>UserCourse.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInfo.cs">
+    <Compile Include="StudentWin_Control\UserInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserInfo.Designer.cs">
+    <Compile Include="StudentWin_Control\UserInfo.Designer.cs">
       <DependentUpon>UserInfo.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Login.byn.resx">
@@ -86,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControl.resx">
+      <DependentUpon>MainControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentWin.resx">
       <DependentUpon>StudentWin.cs</DependentUpon>
@@ -99,13 +114,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentWin_Control\UserGrade.resx">
+      <DependentUpon>UserGrade.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherWin.resx">
       <DependentUpon>TeacherWin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userCourse.resx">
+    <EmbeddedResource Include="StudentWin_Control\userCourse.resx">
       <DependentUpon>UserCourse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInfo.resx">
+    <EmbeddedResource Include="StudentWin_Control\UserInfo.resx">
       <DependentUpon>UserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -130,6 +148,9 @@
       <Project>{36fa3829-9343-463e-83b6-0c290de8684b}</Project>
       <Name>Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TeacherWin_Control\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

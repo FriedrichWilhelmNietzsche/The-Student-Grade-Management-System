@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace WIN_成绩管理系统
 {
-    public partial class userCourse : UserControl
+    public partial class MainControl : UserControl
     {
-        public userCourse()
+        public MainControl()
         {
             InitializeComponent();
         }
-
     }
 }

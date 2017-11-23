@@ -12,8 +12,10 @@ namespace Student_Main
 {
     public partial class UserInfo : UserControl
     {
-        public UserInfo()
+        private BLL.StudentManager studentManager = null;
+        public UserInfo(BLL.StudentManager studentManager)
         {
+            this.studentManager = studentManager;
             InitializeComponent();
         }
 
@@ -27,5 +29,9 @@ namespace Student_Main
             this.text_explain.Text = userInfo.explain;
         }
 
+        private void SaveEdit_Click(object sender, EventArgs e)
+        {
+            studentManager.ModifyUserInfo(this.text_email.Text, this.text_tel.Text, this.text_explain.Text);
+        }
     }
 }

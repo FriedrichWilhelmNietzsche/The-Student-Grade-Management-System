@@ -16,7 +16,10 @@ namespace BLL
             this.user = user;
             this.user_IDAL = new Mysql_DAL.User_DAL();
         }
-
+        public void ModifyUserInfo(string email,string tel,string explain)
+        {
+            user_IDAL.ModifyUserInfo(user.user_id,email, tel, explain);
+        }
         public Model.UserInfo SelectUserInfo()
         {
             return user_IDAL.SelectUserInfo(user.user_id);

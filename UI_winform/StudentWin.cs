@@ -81,18 +81,18 @@ namespace Student_Main
         {
             trans_Click(sender);
 
-            this.userInfo1.Visible = false;
-            this.userInfo1.BringToFront();
-            this.transition1.ShowSync(this.userInfo1);
+            this.userGrade1.Visible = false;
+            this.userGrade1.BringToFront();
+            this.transition1.ShowSync(this.userGrade1);
         }
 
         private void course_Click(object sender, EventArgs e)
         {
             trans_Click(sender);
 
-            this.userInfo1.Visible = false;
-            this.userInfo1.BringToFront();
-            this.transition1.ShowSync(this.userInfo1);
+            this.userCourse1.Visible = false;
+            this.userCourse1.BringToFront();
+            this.transition1.ShowSync(this.userCourse1);
         }
     }
 }

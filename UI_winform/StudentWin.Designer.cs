@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentWin));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Menu = new System.Windows.Forms.Panel();
@@ -49,8 +49,11 @@
             this.dragPanel = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.userInfo1 = new Student_Main.UserInfo();
+            this.userInfo1 = new Student_Main.UserInfo(studentManager);
             this.transition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.userCourse1 = new WIN_成绩管理系统.userCourse();
+            this.userGrade1 = new WIN_成绩管理系统.StudentWin_Control.UserGrade();
+            this.mainControl1 = new WIN_成绩管理系统.MainControl();
             this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loginCloseButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentLogin)).BeginInit();
@@ -194,7 +197,7 @@
             this.loginCloseButton.Image = ((System.Drawing.Image)(resources.GetObject("loginCloseButton.Image")));
             this.loginCloseButton.ImageActive = null;
             this.loginCloseButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.loginCloseButton.Location = new System.Drawing.Point(692, 29);
+            this.loginCloseButton.Location = new System.Drawing.Point(692, 23);
             this.loginCloseButton.Name = "loginCloseButton";
             this.loginCloseButton.Size = new System.Drawing.Size(32, 31);
             this.loginCloseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -209,7 +212,7 @@
             this.transition1.SetDecoration(this.username, BunifuAnimatorNS.DecorationType.None);
             this.username.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(136)))), ((int)(((byte)(148)))));
-            this.username.Location = new System.Drawing.Point(585, 35);
+            this.username.Location = new System.Drawing.Point(607, 28);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(46, 24);
             this.username.TabIndex = 9;
@@ -220,7 +223,7 @@
             this.transition1.SetDecoration(this.studentLogin, BunifuAnimatorNS.DecorationType.None);
             this.studentLogin.Image = ((System.Drawing.Image)(resources.GetObject("studentLogin.Image")));
             this.studentLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.studentLogin.Location = new System.Drawing.Point(530, 25);
+            this.studentLogin.Location = new System.Drawing.Point(552, 20);
             this.studentLogin.Name = "studentLogin";
             this.studentLogin.Size = new System.Drawing.Size(43, 40);
             this.studentLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -240,7 +243,7 @@
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(176)))), ((int)(((byte)(183)))));
             this.transition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Location = new System.Drawing.Point(676, 32);
+            this.label2.Location = new System.Drawing.Point(675, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(1, 25);
             this.label2.TabIndex = 13;
@@ -268,6 +271,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.mainControl1);
+            this.panel1.Controls.Add(this.userGrade1);
+            this.panel1.Controls.Add(this.userCourse1);
             this.panel1.Controls.Add(this.userInfo1);
             this.transition1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(268, 84);
@@ -289,22 +295,46 @@
             // 
             this.transition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.transition1.DefaultAnimation = animation1;
+            animation5.AnimateOnlyDifferences = true;
+            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
+            animation5.LeafCoeff = 0F;
+            animation5.MaxTime = 1F;
+            animation5.MinTime = 0F;
+            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
+            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
+            animation5.MosaicSize = 0;
+            animation5.Padding = new System.Windows.Forms.Padding(0);
+            animation5.RotateCoeff = 0F;
+            animation5.RotateLimit = 0F;
+            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
+            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
+            animation5.TimeCoeff = 0F;
+            animation5.TransparencyCoeff = 0F;
+            this.transition1.DefaultAnimation = animation5;
+            // 
+            // userCourse1
+            // 
+            this.transition1.SetDecoration(this.userCourse1, BunifuAnimatorNS.DecorationType.None);
+            this.userCourse1.Location = new System.Drawing.Point(0, 0);
+            this.userCourse1.Name = "userCourse1";
+            this.userCourse1.Size = new System.Drawing.Size(720, 504);
+            this.userCourse1.TabIndex = 1;
+            // 
+            // userGrade1
+            // 
+            this.transition1.SetDecoration(this.userGrade1, BunifuAnimatorNS.DecorationType.None);
+            this.userGrade1.Location = new System.Drawing.Point(0, 0);
+            this.userGrade1.Name = "userGrade1";
+            this.userGrade1.Size = new System.Drawing.Size(720, 504);
+            this.userGrade1.TabIndex = 2;
+            // 
+            // mainControl1
+            // 
+            this.transition1.SetDecoration(this.mainControl1, BunifuAnimatorNS.DecorationType.None);
+            this.mainControl1.Location = new System.Drawing.Point(0, 0);
+            this.mainControl1.Name = "mainControl1";
+            this.mainControl1.Size = new System.Drawing.Size(720, 504);
+            this.mainControl1.TabIndex = 3;
             // 
             // StudentWin
             // 
@@ -356,5 +386,8 @@
         private System.Windows.Forms.Panel panel1;
         private BunifuAnimatorNS.BunifuTransition transition1;
         private UserInfo userInfo1;
+        private WIN_成绩管理系统.userCourse userCourse1;
+        private WIN_成绩管理系统.StudentWin_Control.UserGrade userGrade1;
+        private WIN_成绩管理系统.MainControl mainControl1;
     }
 }

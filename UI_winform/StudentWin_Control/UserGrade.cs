@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WIN_成绩管理系统
+namespace WIN_成绩管理系统.StudentWin_Control
 {
-    public partial class userCourse : UserControl
+    public partial class UserGrade : UserControl
     {
-        public userCourse()
+        public UserGrade()
         {
             InitializeComponent();
         }
-
     }
 }

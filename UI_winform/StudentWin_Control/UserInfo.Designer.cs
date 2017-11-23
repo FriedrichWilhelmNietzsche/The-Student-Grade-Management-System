@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserInfo));
             this.realName = new System.Windows.Forms.Label();
             this.number = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,6 +42,8 @@
             this.text_email = new System.Windows.Forms.TextBox();
             this.text_explain = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.SaveEdit = new Bunifu.Framework.UI.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.SaveEdit)).BeginInit();
             this.SuspendLayout();
             // 
             // realName
@@ -111,6 +114,7 @@
             // 
             // text_Username
             // 
+            this.text_Username.Enabled = false;
             this.text_Username.ForeColor = System.Drawing.SystemColors.WindowText;
             this.text_Username.Location = new System.Drawing.Point(214, 66);
             this.text_Username.Name = "text_Username";
@@ -119,6 +123,7 @@
             // 
             // text_number
             // 
+            this.text_number.Enabled = false;
             this.text_number.ForeColor = System.Drawing.SystemColors.WindowText;
             this.text_number.Location = new System.Drawing.Point(214, 112);
             this.text_number.Name = "text_number";
@@ -127,6 +132,7 @@
             // 
             // text_Sex
             // 
+            this.text_Sex.Enabled = false;
             this.text_Sex.ForeColor = System.Drawing.SystemColors.WindowText;
             this.text_Sex.Location = new System.Drawing.Point(214, 158);
             this.text_Sex.Name = "text_Sex";
@@ -152,10 +158,10 @@
             // text_explain
             // 
             this.text_explain.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.text_explain.Location = new System.Drawing.Point(214, 302);
+            this.text_explain.Location = new System.Drawing.Point(214, 305);
             this.text_explain.Multiline = true;
             this.text_explain.Name = "text_explain";
-            this.text_explain.Size = new System.Drawing.Size(404, 148);
+            this.text_explain.Size = new System.Drawing.Size(378, 121);
             this.text_explain.TabIndex = 3;
             // 
             // label5
@@ -168,10 +174,26 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "个 人 信 息";
             // 
+            // SaveEdit
+            // 
+            this.SaveEdit.BackColor = System.Drawing.Color.Transparent;
+            this.SaveEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SaveEdit.Image = ((System.Drawing.Image)(resources.GetObject("SaveEdit.Image")));
+            this.SaveEdit.ImageActive = null;
+            this.SaveEdit.Location = new System.Drawing.Point(650, 433);
+            this.SaveEdit.Name = "SaveEdit";
+            this.SaveEdit.Size = new System.Drawing.Size(52, 54);
+            this.SaveEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SaveEdit.TabIndex = 5;
+            this.SaveEdit.TabStop = false;
+            this.SaveEdit.Zoom = 20;
+            this.SaveEdit.Click += new System.EventHandler(this.SaveEdit_Click);
+            // 
             // UserInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.SaveEdit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.text_explain);
             this.Controls.Add(this.text_email);
@@ -188,6 +210,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(75)))), ((int)(((byte)(96)))));
             this.Name = "UserInfo";
             this.Size = new System.Drawing.Size(720, 504);
+            ((System.ComponentModel.ISupportInitialize)(this.SaveEdit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +231,6 @@
         private System.Windows.Forms.TextBox text_email;
         private System.Windows.Forms.TextBox text_explain;
         private System.Windows.Forms.Label label5;
+        private Bunifu.Framework.UI.BunifuImageButton SaveEdit;
     }
 }

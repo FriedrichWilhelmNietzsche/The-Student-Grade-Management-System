@@ -27,7 +27,7 @@ namespace Mysql_DAL
         /// <returns>
         ///     <value="null">不存在该用户</value>
         /// </returns>
-        public User SelectUser(string username, string password,string type)
+        public User SelectUser(string username, string password,int type)
         {
             const string selectSql = "SELECT * FROM users_list WHERE user_name = @username AND user_pass = @password AND role_type = @type";
             User user = null;
@@ -40,12 +40,13 @@ namespace Mysql_DAL
             {
                 new MySqlParameter("@username",MySqlDbType.VarChar,10){Value = username},
                 new MySqlParameter("@password",MySqlDbType.VarChar,15){Value = password},
-                new MySqlParameter("@type",MySqlDbType.Int32,11){Value = SelectType(type)}
+                new MySqlParameter("@type",MySqlDbType.Int32,11){Value = type}
             };
             myCom.Parameters.AddRange(paras);
 
             try
             {
+                string role_type = GetTypeName(type);
                 myConn.Open();
 
                 using (MySqlDataReader reader = myCom.ExecuteReader(CommandBehavior.CloseConnection))
@@ -59,7 +60,7 @@ namespace Mysql_DAL
                             user.user_id = reader.GetInt32("user_id");
                             user.user_name = username;
                             user.user_pass = password;
-                            user.role_type = type;
+                            user.role_type = role_type;
                             user.is_lock = reader.GetInt32("is_lock");
                             user.add_Time = reader.GetDateTime("add_time");
                         }
@@ -159,6 +160,71 @@ namespace Mysql_DAL
 
             return flag;
             
+        }
+
+        public string GetTypeName(int role_type)
+        {
+            const string selectRole = "SELECT role_name FROM role_table WHERE role_type = @role_type";
+
+            string name = "";
+
+            MySqlCommand myCom = myConn.CreateCommand();
+            myCom.CommandText = selectRole;
+            myCom.CommandType = System.Data.CommandType.Text;
+            myCom.Parameters.Add(new MySqlParameter("@role_type",role_type));
+
+            try
+            {
+                myConn.Open();
+
+                using (MySqlDataReader reader = myCom.ExecuteReader(CommandBehavior.CloseConnection))
+                {
+                    while (reader.Read())
+                    {
+                        name = reader.GetString(0);
+                    }
+                }
+            }
+            catch (MySqlException exc)
+            {
+                Console.Write(exc.ToString());
+            }
+
+            return name;
+        }
+
+        public void ModifyUserInfo(int user_id,string email, string tel, string explain)
+        {
+            const string updateSql = "Update `users_info` SET `telephone` = @tel,`email` = @email,`explain` = @explain WHERE user_id = @user_id";
+
+            MySqlCommand myCom = myConn.CreateCommand();
+            myCom.CommandText = updateSql;
+            myCom.CommandType = System.Data.CommandType.Text;
+            MySqlParameter[] paras = new[]
+            {
+                new MySqlParameter("@tel",MySqlDbType.VarChar,11){Value = tel},
+                new MySqlParameter("@email",MySqlDbType.VarChar,20){Value = email},
+                new MySqlParameter("@user_id",MySqlDbType.Int32,11){Value = user_id},
+                new MySqlParameter("@explain",MySqlDbType.VarChar,50){Value = explain}
+            };
+            myCom.Parameters.AddRange(paras);
+
+
+            try
+            {
+                myConn.Open();
+
+                myCom.ExecuteNonQuery();
+
+                myConn.Close();
+            }
+            catch (Exception exc)
+            {
+                Console.Write(exc);
+                myConn.Close();
+            }
+
+
         }
 
         private MySqlConnection myConn;
