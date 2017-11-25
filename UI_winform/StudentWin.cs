@@ -32,12 +32,12 @@ namespace Student_Main
             System.Environment.Exit(0);
         }
 
-        private void bunifuCustomLabel_Enter(object sender, EventArgs e)
+        private void BunifuCustomLabel_Enter(object sender, EventArgs e)
         {
             ((Bunifu.Framework.UI.BunifuCustomLabel)sender).ForeColor = System.Drawing.Color.FromArgb(233, 233, 234);
         }
 
-        private void bunifuCustomLabel_Leave(object sender,EventArgs e)
+        private void BunifuCustomLabel_Leave(object sender,EventArgs e)
         {
             ((Bunifu.Framework.UI.BunifuCustomLabel)sender).ForeColor = System.Drawing.Color.FromArgb(171, 175, 183);
         }
@@ -49,29 +49,34 @@ namespace Student_Main
         /// <param name="sender"></param>
         private void trans_Click(object sender)
         {
-            this.UnderLine.Location = new Point(((Bunifu.Framework.UI.BunifuCustomLabel)sender).Location.X,
-                ((Bunifu.Framework.UI.BunifuCustomLabel)sender).Location.Y + 26);
+            Bunifu.Framework.UI.BunifuCustomLabel Clabel = (Bunifu.Framework.UI.BunifuCustomLabel)sender;
+
+            this.UnderLine.Location = new Point(Clabel.Location.X,
+                Clabel.Location.Y + 26);
             this.UnderLine.Show();
 
             foreach (Bunifu.Framework.UI.BunifuCustomLabel label in paras)
             {
-                label.MouseLeave -= this.bunifuCustomLabel_Leave;
+                label.MouseLeave -= this.BunifuCustomLabel_Leave;
 
                 if (label != sender)
-                    label.MouseLeave += this.bunifuCustomLabel_Leave;
+                    label.MouseLeave += this.BunifuCustomLabel_Leave;
                 label.ForeColor = System.Drawing.Color.FromArgb(171, 175, 183);
             }
 
-            ((Bunifu.Framework.UI.BunifuCustomLabel)sender).ForeColor = System.Drawing.Color.FromArgb(233, 233, 234);
+            Clabel.ForeColor = System.Drawing.Color.FromArgb(233, 233, 234);
         }
 
         private void Info_Click(object sender, EventArgs e)
         {
-            trans_Click(sender);
+            if (this.UnderLine.Location.Y  != ((Bunifu.Framework.UI.BunifuCustomLabel)sender).Location.Y + 26)
+            {
+                this.userInfo1.Visible = false;
+                this.userInfo1.BringToFront();
+                this.transition1.ShowSync(this.userInfo1);
+            }
 
-            this.userInfo1.Visible = false;
-            this.userInfo1.BringToFront();
-            this.transition1.ShowSync(this.userInfo1);
+            trans_Click(sender);
 
             Model.UserInfo userInfo = studentManager.SelectUserInfo();
             this.userInfo1.fillText(userInfo);
@@ -79,20 +84,28 @@ namespace Student_Main
 
         private void Grade_Click(object sender, EventArgs e)
         {
-            trans_Click(sender);
+            if (this.UnderLine.Location.Y != ((Bunifu.Framework.UI.BunifuCustomLabel)sender).Location.Y + 26)
+            {
+                this.userGrade1.Visible = false;
+                this.userGrade1.BringToFront();
+                this.transition1.ShowSync(this.userGrade1);
+            }
 
-            this.userGrade1.Visible = false;
-            this.userGrade1.BringToFront();
-            this.transition1.ShowSync(this.userGrade1);
+            trans_Click(sender);
         }
 
         private void course_Click(object sender, EventArgs e)
         {
+            if (this.UnderLine.Location.Y != ((Bunifu.Framework.UI.BunifuCustomLabel)sender).Location.Y + 26)
+            {
+                this.userCourse1.Visible = false;
+                this.userCourse1.BringToFront();
+                this.transition1.ShowSync(this.userCourse1);
+            }
+
             trans_Click(sender);
 
-            this.userCourse1.Visible = false;
-            this.userCourse1.BringToFront();
-            this.transition1.ShowSync(this.userCourse1);
+            Model.course course;
         }
     }
 }

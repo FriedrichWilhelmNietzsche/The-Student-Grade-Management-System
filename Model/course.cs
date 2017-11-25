@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class course
+    public class course
     {
        private int _course_id;
         /// <summary>
@@ -76,6 +76,13 @@ namespace Model
         {
             get { return _course_explain;  }
             set { _course_explain = value; }
+        }
+
+        private int _course_teacherId;
+        public int course_teacherId
+        {
+            get { return _course_teacherId;  }
+            set { _course_teacherId = value; }
         }
     }
 }

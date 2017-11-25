@@ -54,23 +54,23 @@
             this.courseTable.Location = new System.Drawing.Point(35, 62);
             this.courseTable.Name = "courseTable";
             this.courseTable.RowTemplate.Height = 23;
-            this.courseTable.Size = new System.Drawing.Size(529, 417);
+            this.courseTable.Size = new System.Drawing.Size(550, 417);
             this.courseTable.TabIndex = 6;
             // 
             // courseAdd
             // 
-            this.courseAdd.Location = new System.Drawing.Point(612, 94);
+            this.courseAdd.Location = new System.Drawing.Point(628, 167);
             this.courseAdd.Name = "courseAdd";
-            this.courseAdd.Size = new System.Drawing.Size(84, 77);
+            this.courseAdd.Size = new System.Drawing.Size(68, 66);
             this.courseAdd.TabIndex = 7;
             this.courseAdd.Text = "button1";
             this.courseAdd.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(612, 339);
+            this.button3.Location = new System.Drawing.Point(628, 239);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 77);
+            this.button3.Size = new System.Drawing.Size(68, 66);
             this.button3.TabIndex = 7;
             this.button3.Text = "button1";
             this.button3.UseVisualStyleBackColor = true;

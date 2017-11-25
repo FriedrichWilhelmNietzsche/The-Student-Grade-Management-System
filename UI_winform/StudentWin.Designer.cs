@@ -88,7 +88,7 @@
             // 
             this.UnderLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(234)))));
             this.transition1.SetDecoration(this.UnderLine, BunifuAnimatorNS.DecorationType.None);
-            this.UnderLine.Location = new System.Drawing.Point(114, 385);
+            this.UnderLine.Location = new System.Drawing.Point(0, 0);
             this.UnderLine.Name = "UnderLine";
             this.UnderLine.Size = new System.Drawing.Size(81, 1);
             this.UnderLine.TabIndex = 6;
@@ -132,8 +132,8 @@
             this.course.TabIndex = 2;
             this.course.Text = "课程查询";
             this.course.Click += new System.EventHandler(this.course_Click);
-            this.course.MouseEnter += new System.EventHandler(this.bunifuCustomLabel_Enter);
-            this.course.MouseLeave += new System.EventHandler(this.bunifuCustomLabel_Leave);
+            this.course.MouseEnter += new System.EventHandler(this.BunifuCustomLabel_Enter);
+            this.course.MouseLeave += new System.EventHandler(this.BunifuCustomLabel_Leave);
             // 
             // Grade
             // 
@@ -148,8 +148,8 @@
             this.Grade.TabIndex = 2;
             this.Grade.Text = "成绩查询";
             this.Grade.Click += new System.EventHandler(this.Grade_Click);
-            this.Grade.MouseEnter += new System.EventHandler(this.bunifuCustomLabel_Enter);
-            this.Grade.MouseLeave += new System.EventHandler(this.bunifuCustomLabel_Leave);
+            this.Grade.MouseEnter += new System.EventHandler(this.BunifuCustomLabel_Enter);
+            this.Grade.MouseLeave += new System.EventHandler(this.BunifuCustomLabel_Leave);
             // 
             // Info
             // 
@@ -164,9 +164,9 @@
             this.Info.TabIndex = 2;
             this.Info.Text = "个人信息";
             this.Info.Click += new System.EventHandler(this.Info_Click);
-            this.Info.Enter += new System.EventHandler(this.bunifuCustomLabel_Enter);
-            this.Info.MouseEnter += new System.EventHandler(this.bunifuCustomLabel_Enter);
-            this.Info.MouseLeave += new System.EventHandler(this.bunifuCustomLabel_Leave);
+            this.Info.Enter += new System.EventHandler(this.BunifuCustomLabel_Enter);
+            this.Info.MouseEnter += new System.EventHandler(this.BunifuCustomLabel_Enter);
+            this.Info.MouseLeave += new System.EventHandler(this.BunifuCustomLabel_Leave);
             // 
             // label1
             // 
