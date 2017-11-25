@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WIN_成绩管理系统
+namespace Control_UI
 {
     public partial class MainControl : UserControl
     {

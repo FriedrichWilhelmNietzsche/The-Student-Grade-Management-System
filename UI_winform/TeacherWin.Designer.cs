@@ -1,4 +1,4 @@
-﻿namespace Student_Main
+﻿namespace Teacher_Main
 {
     partial class TeacherWin
     {

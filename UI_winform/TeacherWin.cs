@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Student_Main
+namespace Teacher_Main
 {
     public partial class TeacherWin : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace WIN_成绩管理系统.StudentWin_Control
+﻿namespace Student_Main
 {
     partial class UserGrade
     {

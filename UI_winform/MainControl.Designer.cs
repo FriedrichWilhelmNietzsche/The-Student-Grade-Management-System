@@ -1,4 +1,4 @@
-﻿namespace WIN_成绩管理系统
+﻿namespace Control_UI
 {
     partial class MainControl
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Student_Main
+namespace Login_Main
 { 
     public partial class Login : Form
     {
@@ -197,13 +197,13 @@ namespace Student_Main
                     switch (type)
                     {
                         case "student":
-                            StudentWin studentWin = new StudentWin(user);
+                            Student_Main.StudentWin studentWin = new Student_Main.StudentWin(user);
                             studentWin.Show();
                             this.Hide();
                             break;
 
                         case "teacher":
-                            TeacherWin teacherWin = new TeacherWin(user);
+                            Teacher_Main.TeacherWin teacherWin = new Teacher_Main.TeacherWin(user);
                             teacherWin.Show();
                             this.Hide();
                             break;

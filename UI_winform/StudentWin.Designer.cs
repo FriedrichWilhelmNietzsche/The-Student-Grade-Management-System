@@ -51,9 +51,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.userInfo1 = new Student_Main.UserInfo(studentManager);
             this.transition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.userCourse1 = new WIN_成绩管理系统.userCourse();
-            this.userGrade1 = new WIN_成绩管理系统.StudentWin_Control.UserGrade();
-            this.mainControl1 = new WIN_成绩管理系统.MainControl();
+            this.userCourse1 = new Student_Main.userCourse();
+            this.userGrade1 = new Student_Main.UserGrade();
+            this.mainControl1 = new Control_UI.MainControl();
             this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loginCloseButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentLogin)).BeginInit();
@@ -386,8 +386,8 @@
         private System.Windows.Forms.Panel panel1;
         private BunifuAnimatorNS.BunifuTransition transition1;
         private UserInfo userInfo1;
-        private WIN_成绩管理系统.userCourse userCourse1;
-        private WIN_成绩管理系统.StudentWin_Control.UserGrade userGrade1;
-        private WIN_成绩管理系统.MainControl mainControl1;
+        private Student_Main.userCourse userCourse1;
+        private Student_Main.UserGrade userGrade1;
+        private Control_UI.MainControl mainControl1;
     }
 }

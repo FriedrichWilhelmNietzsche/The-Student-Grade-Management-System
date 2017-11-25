@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Student_Main
+namespace Login_Main
 {
     static class GradeManage_Main
     {

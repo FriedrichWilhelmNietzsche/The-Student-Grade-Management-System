@@ -1,4 +1,4 @@
-﻿namespace Student_Main
+﻿namespace Login_Main
 {
     partial class Login
     {
