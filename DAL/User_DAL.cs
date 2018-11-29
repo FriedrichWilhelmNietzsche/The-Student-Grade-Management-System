@@ -15,7 +15,8 @@ namespace Mysql_DAL
     {
         public User_DAL()
         {
-            myConn = new MySqlConnection("Host=" + DbUtil.host + ";Database=" + DbUtil.Database + ";Username=" + DbUtil.username + ";Password=" + DbUtil.password + ";");
+            //myConn = new MySqlConnection("Host=" + DbUtil.host + ";Database=" + DbUtil.Database + ";Username=" + DbUtil.username + ";Password=" + DbUtil.password + ";");
+            myConn = new MySqlConnection($"Host={ DbUtil.host };Database={ DbUtil.Database} ;Username={DbUtil.username};Password={DbUtil.password};");
         }
 
         /// <summary>

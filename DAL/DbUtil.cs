@@ -11,6 +11,6 @@ namespace Mysql_DAL
         public static string host = "localhost";
         public static string Database = "students";
         public static string username = "root";
-        public static string password = "root";
+        public static string password = "Pass#3word";
     }
 }
