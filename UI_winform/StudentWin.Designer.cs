@@ -367,7 +367,7 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.Panel Menu;
+        private new System.Windows.Forms.Panel Menu;
         private System.Windows.Forms.Label Main_title;
         private Bunifu.Framework.UI.BunifuImageButton loginCloseButton;
         private System.Windows.Forms.Label username;

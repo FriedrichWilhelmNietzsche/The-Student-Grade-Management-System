@@ -392,7 +392,7 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.Panel Menu;
+        private new System.Windows.Forms.Panel Menu;
         private System.Windows.Forms.Label UnderLine;
         private System.Windows.Forms.Label MenuTitle1;
         private System.Windows.Forms.Label MenuTitle3;
