@@ -187,7 +187,7 @@ namespace Login_Main
                     || username.Equals("Username") 
                     || username.Equals("")
                     )
-                MessageBox.Show("请输出正确的账号密码!");
+                MessageBox.Show("请输入正确的账号密码!");
             else
             {
                 try
@@ -227,6 +227,11 @@ namespace Login_Main
         }
 
         #endregion
+
+        private void teacherPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }

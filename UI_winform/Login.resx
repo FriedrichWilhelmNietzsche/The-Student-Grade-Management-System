@@ -935,24 +935,6 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>548, 858</value>
   </data>
-  <data name="student_Username.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑 Light, 20.25pt</value>
-  </data>
-  <data name="student_Username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 406</value>
-  </data>
-  <data name="student_Username.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="student_Username.Size" type="System.Drawing.Size, System.Drawing">
-    <value>375, 45</value>
-  </data>
-  <data name="student_Username.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="student_Username.Text" xml:space="preserve">
-    <value>    Username</value>
-  </data>
   <data name="&gt;&gt;student_Username.Name" xml:space="preserve">
     <value>student_Username</value>
   </data>
@@ -964,24 +946,6 @@
   </data>
   <data name="&gt;&gt;student_Username.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="student_password.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑 Light, 20.25pt</value>
-  </data>
-  <data name="student_password.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 471</value>
-  </data>
-  <data name="student_password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="student_password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>375, 45</value>
-  </data>
-  <data name="student_password.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="student_password.Text" xml:space="preserve">
-    <value>    Password</value>
   </data>
   <data name="&gt;&gt;student_password.Name" xml:space="preserve">
     <value>student_password</value>
@@ -995,30 +959,6 @@
   <data name="&gt;&gt;student_password.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="student_loginButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="student_loginButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 15pt</value>
-  </data>
-  <data name="student_loginButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="student_loginButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 546</value>
-  </data>
-  <data name="student_loginButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="student_loginButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 75</value>
-  </data>
-  <data name="student_loginButton.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="student_loginButton.Text" xml:space="preserve">
-    <value>登         录</value>
-  </data>
   <data name="&gt;&gt;student_loginButton.Name" xml:space="preserve">
     <value>student_loginButton</value>
   </data>
@@ -1030,33 +970,6 @@
   </data>
   <data name="&gt;&gt;student_loginButton.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="studentClose.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="studentClose.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="studentClose.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微軟正黑體, 15pt</value>
-  </data>
-  <data name="studentClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="studentClose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="studentClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>548, 75</value>
-  </data>
-  <data name="studentClose.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="studentClose.Text" xml:space="preserve">
-    <value>学 生 登 录</value>
-  </data>
-  <data name="studentClose.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;studentClose.Name" xml:space="preserve">
     <value>studentClose</value>
@@ -1070,30 +983,6 @@
   <data name="&gt;&gt;studentClose.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="studentName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="studentName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 15pt</value>
-  </data>
-  <data name="studentName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="studentName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 229</value>
-  </data>
-  <data name="studentName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="studentName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 32</value>
-  </data>
-  <data name="studentName.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="studentName.Text" xml:space="preserve">
-    <value>学 生 登 录</value>
-  </data>
   <data name="&gt;&gt;studentName.Name" xml:space="preserve">
     <value>studentName</value>
   </data>
@@ -1105,30 +994,6 @@
   </data>
   <data name="&gt;&gt;studentName.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="studentTag.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="studentTag.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 11.25pt</value>
-  </data>
-  <data name="studentTag.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="studentTag.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 278</value>
-  </data>
-  <data name="studentTag.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="studentTag.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 25</value>
-  </data>
-  <data name="studentTag.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="studentTag.Text" xml:space="preserve">
-    <value>One day as a teacher, a life as a father</value>
   </data>
   <data name="&gt;&gt;studentTag.Name" xml:space="preserve">
     <value>studentTag</value>
@@ -1142,6 +1007,117 @@
   <data name="&gt;&gt;studentTag.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="&gt;&gt;studentLogin.Name" xml:space="preserve">
+    <value>studentLogin</value>
+  </data>
+  <data name="&gt;&gt;studentLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;studentLogin.Parent" xml:space="preserve">
+    <value>studentPanel</value>
+  </data>
+  <data name="&gt;&gt;studentLogin.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="studentPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 85</value>
+  </data>
+  <data name="studentPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="studentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>548, 635</value>
+  </data>
+  <data name="studentPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;studentPanel.Name" xml:space="preserve">
+    <value>studentPanel</value>
+  </data>
+  <data name="&gt;&gt;studentPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;studentPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;studentPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;loginDragControl1.Name" xml:space="preserve">
+    <value>loginDragControl1</value>
+  </data>
+  <data name="&gt;&gt;loginDragControl1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;loginDragControl2.Name" xml:space="preserve">
+    <value>loginDragControl2</value>
+  </data>
+  <data name="&gt;&gt;loginDragControl2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;student_Elipse.Name" xml:space="preserve">
+    <value>student_Elipse</value>
+  </data>
+  <data name="&gt;&gt;student_Elipse.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;student_UserElipse.Name" xml:space="preserve">
+    <value>student_UserElipse</value>
+  </data>
+  <data name="&gt;&gt;student_UserElipse.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;student_buttonElipse.Name" xml:space="preserve">
+    <value>student_buttonElipse</value>
+  </data>
+  <data name="&gt;&gt;student_buttonElipse.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;student_passElipse.Name" xml:space="preserve">
+    <value>student_passElipse</value>
+  </data>
+  <data name="&gt;&gt;student_passElipse.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;teacher_UserElipse.Name" xml:space="preserve">
+    <value>teacher_UserElipse</value>
+  </data>
+  <data name="&gt;&gt;teacher_UserElipse.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse2.Name" xml:space="preserve">
+    <value>bunifuElipse2</value>
+  </data>
+  <data name="&gt;&gt;bunifuElipse2.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;teacher_buttonElipse.Name" xml:space="preserve">
+    <value>teacher_buttonElipse</value>
+  </data>
+  <data name="&gt;&gt;teacher_buttonElipse.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="loginDragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>446, 17</value>
+  </metadata>
   <data name="studentLogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJgAAACYCAYAAAAYwiAhAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH
@@ -1432,105 +1408,213 @@
   <data name="&gt;&gt;studentLogin.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="studentPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 85</value>
-  </data>
-  <data name="studentPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="studentPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>548, 635</value>
-  </data>
-  <data name="studentPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;studentPanel.Name" xml:space="preserve">
-    <value>studentPanel</value>
-  </data>
-  <data name="&gt;&gt;studentPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;studentPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;studentPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
+  <data name="studentTag.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="studentTag.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 11.25pt</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Form1</value>
+  <data name="studentTag.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;loginDragControl1.Name" xml:space="preserve">
-    <value>loginDragControl1</value>
+  <data name="studentTag.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 278</value>
   </data>
-  <data name="&gt;&gt;loginDragControl1.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="studentTag.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="&gt;&gt;loginDragControl2.Name" xml:space="preserve">
-    <value>loginDragControl2</value>
+  <data name="studentTag.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 25</value>
   </data>
-  <data name="&gt;&gt;loginDragControl2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="studentTag.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;student_Elipse.Name" xml:space="preserve">
-    <value>student_Elipse</value>
+  <data name="studentTag.Text" xml:space="preserve">
+    <value>One day as a teacher, a life as a father</value>
   </data>
-  <data name="&gt;&gt;student_Elipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;studentTag.Name" xml:space="preserve">
+    <value>studentTag</value>
   </data>
-  <data name="&gt;&gt;student_UserElipse.Name" xml:space="preserve">
-    <value>student_UserElipse</value>
+  <data name="&gt;&gt;studentTag.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;student_UserElipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;studentTag.Parent" xml:space="preserve">
+    <value>studentPanel</value>
   </data>
-  <data name="&gt;&gt;student_buttonElipse.Name" xml:space="preserve">
-    <value>student_buttonElipse</value>
+  <data name="&gt;&gt;studentTag.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;student_buttonElipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="studentName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;student_passElipse.Name" xml:space="preserve">
-    <value>student_passElipse</value>
+  <data name="studentName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 15pt</value>
   </data>
-  <data name="&gt;&gt;student_passElipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="studentName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;teacher_UserElipse.Name" xml:space="preserve">
-    <value>teacher_UserElipse</value>
+  <data name="studentName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 229</value>
   </data>
-  <data name="&gt;&gt;teacher_UserElipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="studentName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="&gt;&gt;bunifuElipse2.Name" xml:space="preserve">
-    <value>bunifuElipse2</value>
+  <data name="studentName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 32</value>
   </data>
-  <data name="&gt;&gt;bunifuElipse2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="studentName.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;teacher_buttonElipse.Name" xml:space="preserve">
-    <value>teacher_buttonElipse</value>
+  <data name="studentName.Text" xml:space="preserve">
+    <value>学 生 登 录</value>
   </data>
-  <data name="&gt;&gt;teacher_buttonElipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;studentName.Name" xml:space="preserve">
+    <value>studentName</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Login</value>
+  <data name="&gt;&gt;studentName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;studentName.Parent" xml:space="preserve">
+    <value>studentPanel</value>
   </data>
-  <metadata name="loginDragControl2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>446, 17</value>
-  </metadata>
+  <data name="&gt;&gt;studentName.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="student_Username.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑 Light, 20.25pt</value>
+  </data>
+  <data name="student_Username.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 406</value>
+  </data>
+  <data name="student_Username.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="student_Username.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 45</value>
+  </data>
+  <data name="student_Username.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="student_Username.Text" xml:space="preserve">
+    <value>    Username</value>
+  </data>
+  <data name="&gt;&gt;student_Username.Name" xml:space="preserve">
+    <value>student_Username</value>
+  </data>
+  <data name="&gt;&gt;student_Username.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;student_Username.Parent" xml:space="preserve">
+    <value>studentPanel</value>
+  </data>
+  <data name="&gt;&gt;student_Username.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="student_password.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑 Light, 20.25pt</value>
+  </data>
+  <data name="student_password.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 471</value>
+  </data>
+  <data name="student_password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="student_password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 45</value>
+  </data>
+  <data name="student_password.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="student_password.Text" xml:space="preserve">
+    <value>    Password</value>
+  </data>
+  <data name="&gt;&gt;student_password.Name" xml:space="preserve">
+    <value>student_password</value>
+  </data>
+  <data name="&gt;&gt;student_password.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;student_password.Parent" xml:space="preserve">
+    <value>studentPanel</value>
+  </data>
+  <data name="&gt;&gt;student_password.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="student_loginButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="student_loginButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 15pt</value>
+  </data>
+  <data name="student_loginButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="student_loginButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 546</value>
+  </data>
+  <data name="student_loginButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="student_loginButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 75</value>
+  </data>
+  <data name="student_loginButton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="student_loginButton.Text" xml:space="preserve">
+    <value>登         录</value>
+  </data>
+  <data name="&gt;&gt;student_loginButton.Name" xml:space="preserve">
+    <value>student_loginButton</value>
+  </data>
+  <data name="&gt;&gt;student_loginButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;student_loginButton.Parent" xml:space="preserve">
+    <value>studentPanel</value>
+  </data>
+  <data name="&gt;&gt;student_loginButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="studentClose.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="studentClose.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="studentClose.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微軟正黑體, 15pt</value>
+  </data>
+  <data name="studentClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="studentClose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="studentClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>548, 75</value>
+  </data>
+  <data name="studentClose.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="studentClose.Text" xml:space="preserve">
+    <value>学 生 登 录</value>
+  </data>
+  <data name="studentClose.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;studentClose.Name" xml:space="preserve">
+    <value>studentClose</value>
+  </data>
+  <data name="&gt;&gt;studentClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;studentClose.Parent" xml:space="preserve">
+    <value>studentPanel</value>
+  </data>
+  <data name="&gt;&gt;studentClose.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <metadata name="student_Elipse.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

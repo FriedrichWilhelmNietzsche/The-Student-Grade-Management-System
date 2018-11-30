@@ -84,6 +84,7 @@
             resources.ApplyResources(this.teacherPanel, "teacherPanel");
             this.teacherPanel.Name = "teacherPanel";
             this.teacherPanel.Click += new System.EventHandler(this.teacherPanel_Click);
+            this.teacherPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.teacherPanel_Paint);
             this.teacherPanel.MouseEnter += new System.EventHandler(this.teacherPanel_MouseEnter);
             this.teacherPanel.MouseLeave += new System.EventHandler(this.teacherPanel_MouseLeave);
             // 
