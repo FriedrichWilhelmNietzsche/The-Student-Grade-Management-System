@@ -192,7 +192,8 @@ namespace Login_Main
             {
                 try
                 {
-                    Model.User user = loginManager.UserLogin(username, password, "student");
+                    //Model.User user = loginManager.UserLogin(username, password, "student");
+                    Model.User user = loginManager.UserLogin(username, password, type);
 
                     switch (type)
                     {

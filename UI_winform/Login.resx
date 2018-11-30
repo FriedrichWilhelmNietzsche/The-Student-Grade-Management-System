@@ -126,10 +126,14 @@
     <value>隶书, 21.75pt</value>
   </data>
   <data name="Login_name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 19</value>
+    <value>199, 24</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Login_name.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Login_name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 29</value>
+    <value>150, 37</value>
   </data>
   <data name="Login_name.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -149,7 +153,6 @@
   <data name="&gt;&gt;Login_name.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="teacher_loginButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -157,10 +160,13 @@
     <value>微软雅黑, 15pt</value>
   </data>
   <data name="teacher_loginButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 437</value>
+    <value>84, 546</value>
+  </data>
+  <data name="teacher_loginButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="teacher_loginButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 60</value>
+    <value>377, 75</value>
   </data>
   <data name="teacher_loginButton.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -193,7 +199,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="teacherClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>411, 60</value>
+    <value>548, 75</value>
   </data>
   <data name="teacherClose.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -220,10 +226,13 @@
     <value>微软雅黑 Light, 20.25pt</value>
   </data>
   <data name="teacher_Password.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 377</value>
+    <value>87, 471</value>
+  </data>
+  <data name="teacher_Password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="teacher_Password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>281, 43</value>
+    <value>373, 52</value>
   </data>
   <data name="teacher_Password.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -247,10 +256,13 @@
     <value>微软雅黑 Light, 20.25pt</value>
   </data>
   <data name="teacher_Username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 325</value>
+    <value>87, 406</value>
+  </data>
+  <data name="teacher_Username.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="teacher_Username.Size" type="System.Drawing.Size, System.Drawing">
-    <value>281, 43</value>
+    <value>373, 52</value>
   </data>
   <data name="teacher_Username.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -277,10 +289,13 @@
     <value>微软雅黑, 11.25pt</value>
   </data>
   <data name="teacherTag.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 244</value>
+    <value>68, 305</value>
+  </data>
+  <data name="teacherTag.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="teacherTag.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 20</value>
+    <value>432, 25</value>
   </data>
   <data name="teacherTag.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -307,10 +322,13 @@
     <value>微软雅黑, 15pt</value>
   </data>
   <data name="teacherName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 203</value>
+    <value>200, 254</value>
+  </data>
+  <data name="teacherName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="teacherName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 27</value>
+    <value>136, 32</value>
   </data>
   <data name="teacherName.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -783,10 +801,13 @@
 </value>
   </data>
   <data name="teacherLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 60</value>
+    <value>197, 75</value>
+  </data>
+  <data name="teacherLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="teacherLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 117</value>
+    <value>145, 146</value>
   </data>
   <data name="teacherLogin.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -807,10 +828,13 @@
     <value>6</value>
   </data>
   <data name="teacherPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 376</value>
+    <value>0, 470</value>
+  </data>
+  <data name="teacherPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="teacherPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>411, 558</value>
+    <value>548, 698</value>
   </data>
   <data name="teacherPanel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -867,10 +891,13 @@
 </value>
   </data>
   <data name="loginCloseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>370, 12</value>
+    <value>493, 15</value>
+  </data>
+  <data name="loginCloseButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="loginCloseButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 30</value>
+    <value>39, 38</value>
   </data>
   <data name="loginCloseButton.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -882,7 +909,7 @@
     <value>loginCloseButton</value>
   </data>
   <data name="&gt;&gt;loginCloseButton.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;loginCloseButton.Parent" xml:space="preserve">
     <value>$this</value>
@@ -900,22 +927,25 @@
     <value>121</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+    <value>8, 15</value>
   </data>
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>411, 686</value>
+    <value>548, 858</value>
   </data>
   <data name="student_Username.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑 Light, 20.25pt</value>
   </data>
   <data name="student_Username.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 325</value>
+    <value>87, 406</value>
+  </data>
+  <data name="student_Username.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="student_Username.Size" type="System.Drawing.Size, System.Drawing">
-    <value>281, 36</value>
+    <value>375, 45</value>
   </data>
   <data name="student_Username.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -939,10 +969,13 @@
     <value>微软雅黑 Light, 20.25pt</value>
   </data>
   <data name="student_password.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 377</value>
+    <value>87, 471</value>
+  </data>
+  <data name="student_password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="student_password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>281, 36</value>
+    <value>375, 45</value>
   </data>
   <data name="student_password.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -972,10 +1005,13 @@
     <value>NoControl</value>
   </data>
   <data name="student_loginButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 437</value>
+    <value>84, 546</value>
+  </data>
+  <data name="student_loginButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="student_loginButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 60</value>
+    <value>377, 75</value>
   </data>
   <data name="student_loginButton.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -1007,8 +1043,11 @@
   <data name="studentClose.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="studentClose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="studentClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>411, 60</value>
+    <value>548, 75</value>
   </data>
   <data name="studentClose.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1041,10 +1080,13 @@
     <value>NoControl</value>
   </data>
   <data name="studentName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 183</value>
+    <value>199, 229</value>
+  </data>
+  <data name="studentName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="studentName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 27</value>
+    <value>136, 32</value>
   </data>
   <data name="studentName.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1074,10 +1116,13 @@
     <value>NoControl</value>
   </data>
   <data name="studentTag.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 222</value>
+    <value>79, 278</value>
+  </data>
+  <data name="studentTag.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="studentTag.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 20</value>
+    <value>367, 25</value>
   </data>
   <data name="studentTag.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1361,10 +1406,13 @@
     <value>NoControl</value>
   </data>
   <data name="studentLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 60</value>
+    <value>197, 75</value>
+  </data>
+  <data name="studentLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="studentLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 113</value>
+    <value>145, 141</value>
   </data>
   <data name="studentLogin.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -1385,10 +1433,13 @@
     <value>6</value>
   </data>
   <data name="studentPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 68</value>
+    <value>0, 85</value>
+  </data>
+  <data name="studentPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="studentPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>411, 508</value>
+    <value>548, 635</value>
   </data>
   <data name="studentPanel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1405,6 +1456,9 @@
   <data name="&gt;&gt;studentPanel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1418,55 +1472,55 @@
     <value>loginDragControl1</value>
   </data>
   <data name="&gt;&gt;loginDragControl1.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;loginDragControl2.Name" xml:space="preserve">
     <value>loginDragControl2</value>
   </data>
   <data name="&gt;&gt;loginDragControl2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Bunifu.Framework.UI.BunifuDragControl, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;student_Elipse.Name" xml:space="preserve">
     <value>student_Elipse</value>
   </data>
   <data name="&gt;&gt;student_Elipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;student_UserElipse.Name" xml:space="preserve">
     <value>student_UserElipse</value>
   </data>
   <data name="&gt;&gt;student_UserElipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;student_buttonElipse.Name" xml:space="preserve">
     <value>student_buttonElipse</value>
   </data>
   <data name="&gt;&gt;student_buttonElipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;student_passElipse.Name" xml:space="preserve">
     <value>student_passElipse</value>
   </data>
   <data name="&gt;&gt;student_passElipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;teacher_UserElipse.Name" xml:space="preserve">
     <value>teacher_UserElipse</value>
   </data>
   <data name="&gt;&gt;teacher_UserElipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;bunifuElipse2.Name" xml:space="preserve">
     <value>bunifuElipse2</value>
   </data>
   <data name="&gt;&gt;bunifuElipse2.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;teacher_buttonElipse.Name" xml:space="preserve">
     <value>teacher_buttonElipse</value>
   </data>
   <data name="&gt;&gt;teacher_buttonElipse.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Bunifu.Framework.UI.BunifuElipse, Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Login</value>
