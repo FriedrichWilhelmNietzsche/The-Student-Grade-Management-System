@@ -16,7 +16,7 @@ namespace Mysql_DAL
         public User_DAL()
         {
             //myConn = new MySqlConnection("Host=" + DbUtil.host + ";Database=" + DbUtil.Database + ";Username=" + DbUtil.username + ";Password=" + DbUtil.password + ";");
-            myConn = new MySqlConnection($"Host={DbUtil.host};Database={DbUtil.Database};Username={DbUtil.username};Password={DbUtil.password};");
+            myConn = new MySqlConnection($"Host={DbUtil.host};Database={DbUtil.Database};Username={DbUtil.username};Password={DbUtil.password};ssl-mode=None;");
         }
 
         /// <summary>
@@ -65,7 +65,6 @@ namespace Mysql_DAL
                             user.is_lock = reader.GetInt32("is_lock");
                             user.add_Time = reader.GetDateTime("add_time");
                         }
-
                     }
                 }
             }

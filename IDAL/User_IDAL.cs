@@ -31,6 +31,5 @@ namespace IDAL
         ///     <value="-1">不存在该类型</value>
         /// </returns>
         int SelectType(string type);
-
     }
 }
